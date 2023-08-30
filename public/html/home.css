@@ -1,0 +1,41 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+
+body {
+    background: #4a7cb188;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+}
+
+.container{
+  margin-top: 13%;
+}
+.container h2{
+    margin-top: 40px;
+    text-align: center;
+    color: rgb(199, 132, 18);
+    font-weight: bold;
+
+    font-size: 60px;
+
+}
+.container p{
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(189, 32, 32);
+  font-size: 20px;
+
+}
+
+.container label{
+    margin-top: 15px;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: none;
+    max-width: 360px;
+    margin: 0 auto;
+    padding-top: 45px;
+   
+  }

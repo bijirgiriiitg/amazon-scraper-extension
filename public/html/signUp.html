@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./login.css" />
+  </head>
+  <body>
+    <div ng-controller="SignupController">
+      <div class="login-page">
+        <div class="form">
+          <h2>Create your account</h2>
+          <form class="register-form">
+            <input ng-model="name" type="text" placeholder="name" />
+            <input ng-model="email" type="email" placeholder="email address" />
+            <input ng-model="password" type="password" placeholder="password" />
+            <button ng-click="NewUserData(name,password,email)">Sign up</button>
+            <p class="message">
+              Are you already registered?<a href="popup.html#/login">Log In</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

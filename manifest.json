@@ -1,0 +1,42 @@
+{
+    "manifest_version":2,
+    "name":"Amazon-scraper-extension",
+    "version":"1.0",
+    "content_scripts":[
+        {
+            "matches":
+            [
+                "https://www.amazon.in/*",
+                "https://www.amazon.com/*"
+            ],
+            "js":[
+               
+                "./public/js/jquery.js",
+                "./public/js/content.js"
+            ]
+        }
+    ],   
+    "icons":{
+        "16":"./icon.png",
+        "48":"./icon.png",
+        "128":"./icon.png"
+    },
+    "browser_action":{
+        "default_icon":"./icon.png"
+    },
+    "permissions":[
+        "activeTab",
+        "tabs",
+        "https://www.amazon.in/*",
+        "https://www.amazon.com/*"        
+    ],
+    "background":{
+        "scripts":[
+            "./public/js/jquery.js",
+            "./public/js/background.js",
+            "changetab.js"
+        ]
+    },
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com https://cdnjs.cloudflare.com; object-src 'self'"
+    
+}
